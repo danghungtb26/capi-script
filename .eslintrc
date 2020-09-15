@@ -1,0 +1,90 @@
+ {
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "@react-native-community",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "flowtype",
+    "jsx-a11y",
+    "import",
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-case-declarations": 0,
+    "no-underscore-dangle": 0,
+    "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsForRegex": ["^state"] }],
+    "camelcase": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "linebreak-style": 0,
+    "react/prefer-stateless-function": [
+      2,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "react/forbid-prop-types": [
+      0,
+      {
+        "forbid": []
+      }
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": [
+      1,
+      "never",
+      {
+        "svg": "always"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {"packageDir": "."}
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "semi": false
+
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": false
+      }
+    ],
+    "react/require-default-props": [0, { "forbidDefaultForRequired": false }],
+    "global-require": 0,
+    "react/jsx-props-no-spreading": 0,
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": true
+    }]
+  },
+  "env": {
+    "jest": true
+  }
+}
